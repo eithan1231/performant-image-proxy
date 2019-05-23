@@ -57,3 +57,10 @@ This is the primary configuration file that we strongly advise you to configure.
 </br>
 `trustedContentTypes` - (array) Array of trusted MIME types. We advise you to leave this as the default, as configuring it may result in images load being proxied.
 </br></br>
+
+## Route to proxy image
+</br>
+`/proxy?{url}` where `{url}` is the image you want to proxy.
+</br></br>
+Example: `/proxy?https://google.com/favicon.ico`
+</br></br>
