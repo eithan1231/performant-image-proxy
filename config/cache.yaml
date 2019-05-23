@@ -1,0 +1,8 @@
+production:
+  # How long cache will be stored before being considered 'stale'
+  duration: 604800
+
+
+development:
+  # How long cache will be stored before being considered 'stale'
+  duration: 120

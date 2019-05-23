@@ -1,0 +1,60 @@
+production:
+  # Useragent that the crawler will use.
+  userAgent: Mozilla/5.0 (compatible; PIP/1.0, +https://github.com/eithan1231/performant-image-proxy)
+
+  # If user directly accesses the image (without a page loading it), it will
+  # redirect to the original image rather than loading it through proxy. I
+  # would recommend this being enabled.
+  redirectOnDirectAccess: true
+
+  # Hostnames which can refer to this script. This will prevent other websites
+  # using our image proxy.
+  refererHostnames:
+    - example.com
+    - www.example.com
+
+  # All trusted content types (types we will proxy). NOTE: There are probably
+  # hundreds of more image content types.
+  trustedContentTypes:
+    - image/png
+    - image/gif
+    - image/x-icon
+    - image/jpeg
+    - image/bmp
+    - image/svg+xml
+    - image/webp
+    - image/ief
+    - image/pipeg
+    - image/tiff
+    - image/vnd.microsoft.icon
+
+
+development:
+  # Useragent that the crawler will use.
+  userAgent: Mozilla/5.0 (compatible; PIP/1.0, +https://github.com/eithan1231/performant-image-proxy)
+
+  # If user directly accesses the image (without a page loading it), it will
+  # redirect to the original image rather than loading it through proxy. I
+  # would recommend this being enabled.
+  redirectOnDirectAccess: true
+
+  # Hostnames which can refer to this script. This will prevent other websites
+  # using our image proxy.
+  refererHostnames:
+    - example.com
+    - www.example.com
+
+  # All trusted content types (types we will proxy). NOTE: There are probably
+  # hundreds of more image content types.
+  trustedContentTypes:
+    - image/png
+    - image/gif
+    - image/x-icon
+    - image/jpeg
+    - image/bmp
+    - image/svg+xml
+    - image/webp
+    - image/ief
+    - image/pipeg
+    - image/tiff
+    - image/vnd.microsoft.icon
