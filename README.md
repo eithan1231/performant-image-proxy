@@ -58,6 +58,19 @@ This is the primary configuration file that we strongly advise you to configure.
 `trustedContentTypes` - (array) Array of trusted MIME types. We advise you to leave this as the default, as configuring it may result in images load being proxied.
 </br></br>
 
+## Automated cache purger
+</br>
+To automatically purge cache, you must setup a the `cacheclean.js` sript to run on an interval. We would advise to run this via cron on a daily interval.
+</br></br>
+Replace {wd} with the directory in which this server is running
+</br>
+Example Clean Command:
+</br>
+```
+cd {wd} && node cacheclean.js
+```
+</br></br>
+
 ## Route to proxy image
 </br>
 `/proxy?{url}` where `{url}` is the image you want to proxy.
