@@ -1,7 +1,3 @@
-/**
-* Simple argument parser
-*/
-
 module.exports = class argument
 {
 	static get(key)
@@ -12,7 +8,7 @@ module.exports = class argument
 			return false;
 		}
 
-		if(args.length <= pos) {
+		if(args.length - 1 <= pos) {
 			return true;
 		}
 
